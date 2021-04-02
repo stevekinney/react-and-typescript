@@ -1,17 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Course",
-    subtitle: "For making great content",
+    title: "React && TypeScript",
+    subtitle: "Build more reliable, type-safe applications",
     description:
       "This is the description that will show up when people share as well as on search engines",
     keywords: [
-      "this is",
-      "a list of keywords and phrase",
-      "that search engines",
-      "will index your page for"
+      "react",
+      "typescript",
+      "frontend masters"
     ]
   },
-  //pathPrefix: "/my-repo-name", // if you're using GitHub Pages, put the name of the repo here with a leading slash
+  // pathPrefix: "/my-repo-name", // if you're using GitHub Pages, put the name of the repo here with a leading slash
   plugins: [
     `gatsby-plugin-layout`,
     {
