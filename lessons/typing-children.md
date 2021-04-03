@@ -51,7 +51,7 @@ What should you notied about this example?
 - That child can be another React component.
 - That child can be a standard HTML element.
 
-So, how do we type this? Well. We have a few choices.
+How do we type this? Well. We have a few choices.
 
 - `JSX.Element;`: 💩 This doesn't account for arrays at all.
 - `JSX.Element | JSX.Element[];` 😕 This doesn't accept strings.

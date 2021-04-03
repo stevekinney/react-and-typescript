@@ -119,7 +119,7 @@ export const CalculatorContext = createContext<PizzaContext | null>(null);
 
 That satifies the problem here, but it pushes our problem elsewhere. Now, every component that consumes this container is going to have to deal with the fact that the value of the `PizzaContext` _could_ be `null`.
 
-So, our next solution is to do something like this:
+Our next solution is to do something like this:
 
 ```tsx
 export const CalculatorContext = createContext<PizzaContext>(

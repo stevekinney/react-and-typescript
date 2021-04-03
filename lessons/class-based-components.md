@@ -6,17 +6,17 @@ section: "Class-Based Components"
 description: "A brief look at how we can add type safety to class-based React cmponents."
 ---
 
+So far, we've mostly looked at examples of components using hooks for state management, but you and I both know that there are still plenty of React codebases out there chock full of class-based components. Can we use TypeScript with those components? Absolutely. Let's take a look at how we might go about that.
+
 Here is an [example sandbox](https://codesandbox.io/s/incident-counter-class-based-4h4d5).
 
-So, maybe you're not using fancy functional components everywhere. Maybe, you've still got some class components around. How do you use TypeScript with those components?
-
 ```tsx
-class App extends React.Component<MyProps, MyState> {
+class VeryImportantComponent extends React.Component<MyProps, MyState> {
   // …
 }
 ```
 
-So, let's look at our silly `Counter` example from earlier.
+Let's look at our silly `Counter` example from earlier.
 
 ```tsx
 type CounterProps = {

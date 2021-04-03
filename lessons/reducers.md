@@ -75,7 +75,7 @@ Oh, look. We have some errors.
 
 One of my least favorite things about the web is that inputs—even if they have `type` of "number"—will return strings and TypeScript is well aware of that.
 
-So, we need to convert the output to numbers.
+We need to convert the output to numbers.
 
 ```tsx
 dispatch({
@@ -208,7 +208,7 @@ export const updateSlicesPerPie = (value: number): PizzaAction =>
 
 It's just a helper, but it gets a bit cooler than this.
 
-So, let's say that this is our reducer.
+Let's say that this is our reducer.
 
 ```ts
 export const reducer = (state: PizzaState, action: PizzaAction): PizzaState => {
@@ -242,7 +242,7 @@ We _could_ use constants. That's a common pattern in JavaScript.
 
 Last time around, we used conditionals, which helped. But TypeSafe actions gives us another option.
 
-So, I'd rather see us do something like this:
+I'd rather see us do something like this:
 
 ```ts
 export const reducer = (state: PizzaState, action: PizzaAction): PizzaState => {

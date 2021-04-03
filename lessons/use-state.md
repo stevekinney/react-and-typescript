@@ -65,7 +65,7 @@ const [user, setUser] = useState(null);
 const [isLoading, toggleLoading] = useState(true);
 ```
 
-Eventually, `user` should be something and we'll likely get it from the API, but—initially—we don't have a value just yet. So, there is nothing for TypeScript to infer.
+Eventually, `user` should be something and we'll likely get it from the API, but—initially—we don't have a value just yet. There is nothing for TypeScript to infer.
 
 Let's assume our User model has the following shape to it:
 
