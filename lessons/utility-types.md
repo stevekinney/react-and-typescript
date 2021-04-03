@@ -6,7 +6,7 @@ section: "Helpful TypeScript Concepts"
 description: "A quick rundown of some of the built-in type helpers and whatnot."
 ---
 
-## keyof
+## `keyof`
 
 ```ts
 type ObjectLiteralType = {
@@ -18,9 +18,7 @@ type ObjectLiteralType = {
 type Result = keyof ObjectLiteralType; // (A)
 ```
 
----
-
-## Getting the type of a single key in an object
+## Getting The Type Of A Single Key In An Object
 
 Use the index operator.
 
@@ -42,9 +40,7 @@ type Result1 = Obj[0 | 1];
 type Result2 = Obj["prop0" | "prop1"];
 ```
 
----
-
-## What about getting the values?
+## What About Getting The Values?
 
 It's not as clean, but it'll work.
 
@@ -59,8 +55,6 @@ type Obj = {
 type Values = Obj[keyof Obj];
 ```
 
----
-
 ## Unions
 
 ```ts
@@ -71,9 +65,7 @@ type B = "b" | "c" | "d";
 type Union = A | B;
 ```
 
----
-
-## Unions with Objects
+### Unions With Objects
 
 ```ts
 type ObjectTypeA = {
@@ -91,9 +83,7 @@ type Union = ObjectTypeA | ObjectTypeB;
 
 You have to check for anything that is not shared between both.
 
----
-
-### Intersections
+## Intersections
 
 This is useful when trying to combine the props that you're going to use for a React component, just sayin'.
 
@@ -105,17 +95,13 @@ type B = "b" | "c" | "d";
 type Intersection = A & B;
 ```
 
----
-
-### Conditionals!
+## Conditionals
 
 Ternaries only.
 
 ```ts
 type Wrap<T> = T extends { length: number } ? [T] : T;
 ```
-
----
 
 ### Conditionals: Example
 
@@ -132,8 +118,6 @@ type Result1 = IsAssignableTo<123, number>;
 // %inferred-type: false
 type Result2 = IsAssignableTo<number, 123>;
 ```
-
----
 
 ## Exclude
 
@@ -152,8 +136,6 @@ type Result1 = Exclude<1 | "a" | 2 | "b", number>;
 type Result2 = Exclude<1 | "a" | 2 | "b", 1 | "b" | "c">;
 ```
 
----
-
 ## Extract
 
 The opposite of `Exclude`.
@@ -168,8 +150,6 @@ type Result1 = Extract<1 | "a" | 2 | "b", number>;
 type Result2 = Extract<1 | "a" | 2 | "b", 1 | "b" | "c">;
 ```
 
----
-
 ## Objects
 
 ```ts
@@ -182,10 +162,6 @@ You can also define a type for keys as well.
 type ObjectWithStringKeys = { [key: string]: number };
 ```
 
----
-
-## Objects
-
 You can iterate over a union if you want.
 
 ```ts
@@ -195,38 +171,7 @@ type Result = {
 };
 ```
 
----
-
-## ReturnType
-
-```ts
-type BasicMath = (a: number, b: number) => number;
-
-// %inferred-type: number
-type BasicMathReturn = ReturnType<BasicMath>;
-```
-
----
-
 ## `Pick`
-
-## `Omit`
-
-Literally the opposite of `Pick`
-
-```ts
-type ObjectLiteralType = {
-  eeny: 1;
-  meeny: 2;
-  miny: 3;
-  moe: 4;
-};
-
-// %inferred-type: { meeny: 2; moe: 4; }
-type Result = Pick<ObjectLiteralType, "meeny" | "moe">;
-```
-
----
 
 ## `Omit`
 
@@ -244,8 +189,6 @@ type ObjectLiteralType = {
 type Result = Omit<ObjectLiteralType, "eeny" | "miny">;
 ```
 
----
-
 ### String Manipulation Utilities
 
 ```ts
@@ -254,8 +197,6 @@ type LowercaseWes = Lowercase<"Wes">;
 type CapitalizeWes = Capitalize<"wes">;
 type UncapitalizeWes = Uncapitalize<"Wes">;
 ```
-
----
 
 ### `React.HTMLProps<HTMLXXXElement>`
 
@@ -267,8 +208,6 @@ const Input: React.FC<Props & React.HTMLProps<HTMLInputElement>> = props => { ..
 <Input about={...} accept={...} alt={...} ... />
 ```
 
----
-
 ### `React.ComponentProps<typeof XXX>`
 
 We'll use this one in the very next exercise—just sayin'.
@@ -276,8 +215,6 @@ We'll use this one in the very next exercise—just sayin'.
 ```ts
 type MyComponentProps = React.ComponentProps<typeof MyComponent>;
 ```
-
----
 
 ### Generic List Component
 
