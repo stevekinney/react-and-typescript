@@ -1,8 +1,8 @@
 ---
 path: "/reducers"
 title: "Typing Reducers"
-order: "3E"
-section: "Typing with Hooks and State Management"
+order: "4A"
+section: "Working with Reducers"
 description: "Using TypeScript beyond basic state management."
 ---
 

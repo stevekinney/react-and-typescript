@@ -1,7 +1,7 @@
 ---
 path: "/types-versus-interfaces"
 title: "Types Versus Interfaces"
-order: "8B"
+order: "10B"
 section: "Appendix"
 description: "What are some of the differences between types and interfaces?"
 ---

@@ -1,8 +1,8 @@
 ---
 path: "/higher-order-components"
 title: "Higher Order Components with TypeScript"
-order: "6D"
-section: "Component Patterns: Basic"
+order: "8A"
+section: "Higher Order Components"
 description: "Implementing the higher-order component pattern with TypeScript."
 ---
 

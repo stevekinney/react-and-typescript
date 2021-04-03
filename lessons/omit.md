@@ -1,7 +1,7 @@
 ---
 path: "/omit"
 title: "Omitting Props from a Type"
-order: "6B"
+order: "7C"
 section: "Component Patterns: Basic"
 description: "Omitting props from a type so that we can use our own."
 ---

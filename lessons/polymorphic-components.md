@@ -1,7 +1,7 @@
 ---
 path: "/polymorphic-components"
 title: "Polymorphic Components with TypeScript"
-order: "7B"
+order: "9B"
 section: "Component Patterns: Advanced"
 description: "Typing Polymorphic components with TypeScript."
 ---

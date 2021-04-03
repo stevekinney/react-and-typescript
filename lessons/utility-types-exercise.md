@@ -1,16 +1,12 @@
 ---
 path: "/utility-types-exercise"
 title: "Utility Types (Exercise)"
-order: "5B"
+order: "6C"
 section: "Helpful TypeScript Concepts"
 description: "An exercise for getting comfortable with utility types in TypeScript."
 ---
 
 We'll start with the following code in [this sandbox](https://codesandbox.io/s/fun-with-utility-types-2lmj2?file=/src/Application.tsx).
-
-```tsx
-
-```
 
 ## Solution
 
@@ -44,5 +40,3 @@ We can create a type for props out of the prop type of another component—even 
 ```tsx
 React.ComponentProps<typeof CurrentUser>
 ```
-
-[Solution sandbox](https://codesandbox.io/s/fun-with-utility-types-solution-x0i28?file=/src/Application.tsx)

@@ -19,7 +19,7 @@ You don't need a lot to get rocking and/or rolling with this course. In fact, mo
 But, let's assume that you also want to work on some of this stuff locally as well. In that case, you're going to want to have the following installed:
 
 - [NodeJS][]. This course was tested using the latest LTS release of Node at the time (e.g. 14), but it honestly shouldn't matter much. I recommend using [nvm][] to manage which version of Node you're using.
-- You're going to need an editor of some kind. I recommend using [Visual Studio Code][]. But, you likely already have opinions on this topic.
+- You're going to need an editor of some kind. I recommend using [Visual Studio Code][vscode]. But, you likely already have opinions on this topic.
 
 In case you're morbidly curious about what I'm using as we spend the next several hours together, here is a quick rundown of my setup.
 

@@ -1,5 +1,5 @@
 ---
-path: "/the-basics"
+path: "/the-most-basic-example"
 title: "The Very Basics"
 order: "2A"
 section: "TypeScript and React Fundamentals"

@@ -37,24 +37,3 @@ export default function Application() {
   );
 }
 ```
-
-### Exercise
-
-We're going to use [this sandbox](https://codesandbox.io/s/typescript-children-3vu37?file=/src/App.tsx).
-
-### Solution
-
-What should you notied about this example?
-
-- `Box` renders `children`.
-- It can render more than one child.
-- That child can be another React component.
-- That child can be a standard HTML element.
-
-How do we type this? Well. We have a few choices.
-
-- `JSX.Element;`: 💩 This doesn't account for arrays at all.
-- `JSX.Element | JSX.Element[];` 😕 This doesn't accept strings.
-- `React.ReactChildren;`: 🤪 Not at even an appropriate type; it's a utility function.
-- `React.ReactChild[];`: 😀 Accepts multiple children, but it doesn't accept a single child.
-- `React.ReactNode;`: 🏆 Accepts everything.

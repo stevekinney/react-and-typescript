@@ -34,14 +34,10 @@ TypeScript has now created the following type for this component:
 const Greeting: ({ name }: GreetingProps) => JSX.Element;
 ```
 
-You could also do this inline if it makes you happier. But, it shouldn't make you happier, because it's one of those things that will get out of control fairly quickly.
+**An aside**: You could also do this inline if it makes you happier. But, it shouldn't make you happier, because it's one of those things that will get out of control fairly quickly.
 
 ```tsx
 const Greeting = ({ name }: { name: string }) => <h1>Hello {name}!</h1>;
 ```
 
 This is fine for one prop, but it doesn't scale particularly well.
-
-### Commonly-Used Props
-
-Take a look at [this gist](https://gist.github.com/stevekinney/2063a12c3bc76645f22e54e7d079ec39).
