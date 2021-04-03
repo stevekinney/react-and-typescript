@@ -1,14 +1,14 @@
 .gradient {
-  background: rgb(96, 108, 136);
+  background: rgb(136, 96, 116);
   background: linear-gradient(
     to bottom,
-    rgb(96, 108, 136) 0%,
-    rgb(63, 76, 107) 100%
+    rgb(211, 18, 115) 0%,
+    rgb(167, 55, 111) 100%
   );
 }
 
 .navbar {
-  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 0px 5px #333;
   position: sticky;
   width: 100%;
   top: 0;
@@ -29,18 +29,15 @@
   font-size: 14px;
   margin: inherit;
   padding: inherit;
-  text-transform: uppercase;
   color: white;
 }
 
 .jumbotron.gradient {
   color: white;
-  text-transform: uppercase;
   font-weight: bold;
 }
 
 .navbar-brand.navbar-brand {
-  text-transform: uppercase;
   color: white;
   font-weight: bold;
 }
@@ -57,8 +54,14 @@
   margin: 15px;
   padding: 15px;
   background-color: #fff;
-  border-radius: 8px;
   overflow: scroll;
+}
+
+.lesson h1 {
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px dashed #ccc;
 }
 
 .lesson p {
@@ -80,7 +83,6 @@
 
 .lesson-title {
   color: white;
-  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -112,9 +114,7 @@
 }
 
 .gatsby-highlight {
-  /* border: 1px solid black; */
   padding: 4px;
-  border-radius: 4px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -143,10 +143,4 @@
   border-right: none;
   position: relative;
   margin-bottom: 15px;
-}
-
-.doggos {
-  width: 100%;
-  border: 1px solid #666;
-  border-radius: 5px;
 }
