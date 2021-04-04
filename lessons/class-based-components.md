@@ -1,8 +1,8 @@
 ---
 path: "/class-based-components"
 title: "Typing Class-based Components"
-order: "2F"
-section: "TypeScript and React Fundamentals"
+order: "3E"
+section: "Class-Based Components"
 description: "A brief look at how we can add type safety to class-based React cmponents."
 ---
 

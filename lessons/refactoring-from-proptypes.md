@@ -76,11 +76,3 @@ export default Application;
 ```
 
 [base]: https://codesandbox.io/s/name-tag-bts5l?file=/src/Application.tsx
-
-## Your Turn
-
-Okay, just to get the blood flowing and build up some muscle memory. Why don't you add a second prop: the ability to replace "Hello" with the greeting of your choosing.
-
-You can see the solution [here][solution].
-
-[solution]: https://codesandbox.io/s/name-tag-solution-slwmk?file=/src/Application.tsx

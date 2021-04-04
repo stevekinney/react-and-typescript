@@ -8,23 +8,27 @@ description: "An introduction to typing useState in React."
 
 When in doubt, TypeScript is going to try its hardest to infer types on your behalf. Let's look at the following silly update to our component.
 
+<iframe src="https://codesandbox.io/embed/avengers-quiz-oxm68?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApplication.tsx&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="avengers-quiz"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
 ```tsx
-import { useState } from "react";
-
-type GreetingProps = { name: string };
-
-const Greeting = ({ name }: GreetingProps) => {
-  const [isHidden, toggleHidden] = useState(false);
-
+const Question = ({ question, answer }: QuestionProps) => {
   return (
-    <section>
-      {!isHidden && <h1>Hello {name}!</h1>}
-      <button onClick={() => toggleHidden(!isHidden)}>Hide</button>
-    </section>
+    <article className="question">
+      <header>{question}</header>
+      <p className="answer">
+        <span className="blurred">{answer}</span>
+      </p>
+      <footer>
+        <button>Toggle Answer</button>
+      </footer>
+    </article>
   );
 };
-
-export default Greeting;
 ```
 
 The notable and new piece is our use of React's `useState` hook.
@@ -51,7 +55,15 @@ This will work any time that we have a default value for a piece of state.
 const [name, setName] = useState("Steve");
 ```
 
+It looks like it was a string. So, we must be ready to go.
+
 ```tsx
 const name: string;
 const setName: React.Dispatch<React.SetStateAction<string>>;
 ```
+
+[This sandbox][complete] represents where we are at the end of this section.
+
+[complete]: https://codesandbox.io/s/avengers-quiz-use-state-z68vj?file=/src/Application.tsx
+
+**Nota bene**: You might be wondering what this looks like when we change the state. We'll come back to that shortly, I promise.

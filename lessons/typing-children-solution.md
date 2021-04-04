@@ -6,13 +6,6 @@ section: "TypeScript and React Fundamentals"
 description: "In which we determine what type to use for child components in React."
 ---
 
-What should you noticed about this example?
-
-- `Box` renders `children`.
-- It can render more than one child.
-- That child can be another React component.
-- That child can be a standard HTML element.
-
 How do we type this? Well. We have a few choices.
 
 - `JSX.Element;`: 💩 This doesn't account for arrays at all.

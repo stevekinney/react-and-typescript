@@ -8,6 +8,11 @@ description: "A quick look at how to type inline CSS styling with TypeScript"
 
 What if we wanted to make the box a little bit more customizable?
 
+We'll explore the following:
+
+- How to type CSS properties.
+- How to use an optional type.
+
 ```tsx
 import "./styles.css";
 
@@ -39,3 +44,14 @@ export default function Application() {
   );
 }
 ```
+
+Here is [sandbox with the completed version of what we've done so far][complete].
+
+[complete]: https://codesandbox.io/s/typescript-children-completed-with-css-6bx23
+
+<iframe src="https://codesandbox.io/embed/typescript-children-completed-with-css-6bx23?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="typescript-children-completed-with-css"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
