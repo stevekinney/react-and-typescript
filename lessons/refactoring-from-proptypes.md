@@ -20,7 +20,7 @@ Greeting.propTypes = {
 };
 ```
 
-There is no need for `PropTypes` in TypeScript as that's pretty much supposed to be what TypeScript does on our behalf.
+There is no need for `PropTypes` in TypeScript as that's pretty much a large part of what TypeScript does on our behalf.
 
 ```tsx
 type GreetingProps = { name: string };
@@ -34,6 +34,8 @@ TypeScript has now created the following type for this component:
 const Greeting: ({ name }: GreetingProps) => JSX.Element;
 ```
 
+## Inline Type Declarations
+
 **An aside**: You could also do this inline if it makes you happier. But, it shouldn't make you happier, because it's one of those things that will get out of control fairly quickly.
 
 ```tsx
@@ -41,3 +43,44 @@ const Greeting = ({ name }: { name: string }) => <h1>Hello {name}!</h1>;
 ```
 
 This is fine for one prop, but it doesn't scale particularly well.
+
+## Together
+
+Let's update our [simple nametag component][base] and add a name property just like we saw above.
+
+It might look something like this:
+
+```tsx
+type NameTagProps = {
+  name: string;
+};
+
+const NameTag = ({ name }: NameTagProps) => {
+  return (
+    <main>
+      <header>
+        <h1>Hello</h1>
+        <p>My Name Is</p>
+      </header>
+      <section className="display-name">
+        <p>{name}</p>
+      </section>
+      <footer />
+    </main>
+  );
+};
+
+const Application = () => <NameTag name="Steve" />;
+
+export default Application;
+```
+
+[base]: https://codesandbox.io/s/name-tag-bts5l?file=/src/Application.tsx
+
+## Your Turn
+
+Okay, just to get the blood flowing and build up some muscle memory. Why don't you add a second prop: the ability to replace "Hello" with the greeting of your choosing.
+
+You can see the solution [here][solution].
+
+[solution]: https://codesandbox.io/s/name-tag-solution-slwmk?file=/src/Application.tsx
