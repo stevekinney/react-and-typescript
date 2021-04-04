@@ -1,7 +1,7 @@
 ---
 path: "/utility-types-solution"
 title: "Utility Types (Solution)"
-order: "6D"
+order: "6E"
 section: "Helpful TypeScript Concepts"
 description: "An exercise for getting comfortable with utility types in TypeScript."
 ---

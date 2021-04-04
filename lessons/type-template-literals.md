@@ -1,7 +1,7 @@
 ---
 path: "/type-template-literals"
 title: "Type Template Literals"
-order: "6E"
+order: "6F"
 section: "Helpful TypeScript Concepts"
 description: "Using type template liberals to dynamically create types."
 ---

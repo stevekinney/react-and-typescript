@@ -1,7 +1,7 @@
 ---
 path: "/utility-types-exercise"
 title: "Utility Types (Exercise)"
-order: "6C"
+order: "6D"
 section: "Helpful TypeScript Concepts"
 description: "An exercise for getting comfortable with utility types in TypeScript."
 ---
