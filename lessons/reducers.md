@@ -25,12 +25,12 @@ const reducer = (state: any, action: any) => {
 Well, we know the shape of the pizza state, right?
 
 ```tsx
-const reducer = (state: pizzaState, action: any) => {
+const reducer = (state: PizzaState, action: any) => {
   // …
 };
 ```
 
-(If you remember, try to fat-finger it to use `pizzaData` first.)
+(If you remember, try to fat-finger it to use `PizzaData` first.)
 
 We do need to figure out what we're going to do with the actions though, right? Luckily, they mostly conform to the same shape.
 
@@ -47,7 +47,7 @@ type PizzaAction = {
 Next, we'll update the reducer.
 
 ```tsx
-const reducer = (state: pizzaState, action: PizzaAction) => {
+const reducer = (state: PizzaState, action: PizzaAction) => {
   // …
 };
 ```
@@ -64,7 +64,7 @@ const Calculator = ({
   dispatch,
   state,
 }: {
-  state: pizzaState;
+  state: PizzaState;
   dispatch: Dispatch<PizzaAction>;
 }) => {
   // …
@@ -86,11 +86,7 @@ dispatch({
 
 This will mostly get everything working.
 
-### Exercise: Reducers for Counter
-
-For the Incident Counter sandbox from earlier and take it for a spin.
-
-## Type-Safe Actions
+## Actions
 
 With this awesome library called "type-safe" actions, we can do the following:
 
@@ -169,5 +165,3 @@ export const reducer = (state: PizzaState, action: PizzaAction): PizzaState => {
   return state;
 };
 ```
-
-Pro-tip: Look at [typesafe-actions](https://github.com/piotrwitek/typesafe-actions#2-fsa-compliant-actions)

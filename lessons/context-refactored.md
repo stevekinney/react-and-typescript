@@ -1,8 +1,8 @@
 ---
 path: "/context-solution"
-title: "Refactoring the Context API"
-order: "5C"
-section: "The Context API"
+title: "OLD Context API Solution"
+order: "5E"
+section: "A Color Swatch and the Context API"
 description: "Refactoring the Context API"
 ---
 
