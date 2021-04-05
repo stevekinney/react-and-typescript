@@ -1,8 +1,8 @@
 ---
 path: "/context-solution"
 title: "OLD Context API Solution"
-order: "5E"
-section: "A Color Swatch and the Context API"
+order: "99A"
+section: "Deprecated"
 description: "Refactoring the Context API"
 ---
 

@@ -1,8 +1,8 @@
 ---
 path: "/refactoring-color-inputs"
 title: "Refactoring the Color Inputs"
-order: "99A"
-section: "Unfiled"
+order: "5D"
+section: "A Color Swatch and the Context API"
 description: "Let's DRY out our inputs?"
 ---
 

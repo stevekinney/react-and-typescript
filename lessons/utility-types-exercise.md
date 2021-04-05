@@ -6,37 +6,21 @@ section: "Helpful TypeScript Concepts"
 description: "An exercise for getting comfortable with utility types in TypeScript."
 ---
 
+<iframe src="https://codesandbox.io/embed/fun-with-utility-types-2lmj2?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApplication.tsx&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="fun-with-utility-types"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
 We'll start with the following code in [this sandbox](https://codesandbox.io/s/fun-with-utility-types-2lmj2?file=/src/Application.tsx).
 
-## Solution
+## Your Mission
 
-We can start by making a type that omits `accountId`.
+We're going to try two things here.
 
-```ts
-type UserProps = Omit<UserModel, "accountId">;
-```
-
-If we hover over it, we'll see:
-
-```ts
-type UserProps = {
-  displayName: string;
-  isVerified: boolean;
-};
-```
-
-Boom. That did the trick. Alternatively, we could do something like this:
-
-```ts
-type AlternateUserProps = Pick<UserModel, "displayName" | "isVerified">;
-```
-
-Same result.
-
-### Copying Props
-
-We can create a type for props out of the prop type of another component—even if we don't have direct access to the type itself.
-
-```tsx
-React.ComponentProps<typeof CurrentUser>
-```
+- We want to make it so that the CurrentUser component accepts all
+  of the properties from the `UserModel` except for `accountId`.
+- We want the Friend component to read the properties from the
+  CurrentUser component and use the same props. (I know it's contrived,
+  but see if you can do it without reusing the same type.)

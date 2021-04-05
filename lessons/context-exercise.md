@@ -1,8 +1,8 @@
 ---
 path: "/context-exercise"
 title: "OLD: Context API (Exercise)"
-order: "5D"
-section: "A Color Swatch and the Context API"
+order: "99A"
+section: "Deprecated"
 description: "Get your hands dirty with the Context API and TypeScript."
 ---
 
