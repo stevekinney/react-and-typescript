@@ -21,3 +21,5 @@ From [Microsoft's TypeScript Handbook](https://www.typescriptlang.org/docs/handb
 TL; DR you can extend interfaces. This is convenient, bit it can also make things more complicated. It's up to you to decide if this is a think that makes your life better or not.
 
 [Here](https://twitter.com/karoljmajewski/status/1082413696075382785) is a fun chart to look at.
+
+![Types Versus Interfaces](https://pbs.twimg.com/media/DwV-oOsXcAIct2q?format=jpg&name=medium)
