@@ -3,7 +3,7 @@ module.exports = {
     title: "React && TypeScript",
     subtitle: "Build more reliable, type-safe applications",
     description:
-      "This is the description that will show up when people share as well as on search engines",
+      "The companion website for Steve's \"React and TypeScript\" workshop for Frontend Masters",
     keywords: [
       "react",
       "typescript",
