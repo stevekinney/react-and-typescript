@@ -1,12 +1,19 @@
 ---
 path: "/dependent-props"
 title: "Demanding Props Based on Other Props"
-order: "9D"
+order: "9F"
 section: "Advanced Component Patterns"
 description: "A look at how to implement props that rely on other props being set."
 ---
 
-Let's start with the following example:
+Let's start with the [following example][base]:
+
+<iframe src="https://codesandbox.io/embed/truncated-text-incomplete-hrbi5?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApplication.tsx&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="truncated-text-incomplete"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 ```tsx
 import { useState } from "react";
@@ -119,10 +126,6 @@ function Text(props: TextProps & { truncate?: boolean; expanded?: boolean }) {
 }
 ```
 
-And then take it for a spin:
-
-// TODO
-
 But, we can do better. We can say that our `Text` component takes our special overides and expects a string as a child, but also takes whatever a `div` takes. Either of these will work.
 
 ```tsx
@@ -144,6 +147,13 @@ We can now do something like this…
 ```
 
 This is what it looks like at the end.
+
+<iframe src="https://codesandbox.io/embed/truncated-text-complete-kbl59?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApplication.tsx&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="truncated-text-complete"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 ```tsx
 import * as React from "react";
@@ -192,3 +202,6 @@ const Application = () => {
 
 export default Application;
 ```
+
+[base]: https://codesandbox.io/s/truncated-text-incomplete-hrbi5
+[complete]: https://codesandbox.io/s/truncated-text-complete-kbl59
