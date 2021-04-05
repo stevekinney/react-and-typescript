@@ -2,7 +2,7 @@
 path: "/overloads"
 title: "Function Overloads"
 order: "9C"
-section: "Component Patterns: Advanced"
+section: "Advanced Component Patterns"
 description: "A brief look at function overloads in TypeScript."
 ---
 

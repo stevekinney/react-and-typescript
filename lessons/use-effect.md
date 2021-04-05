@@ -2,7 +2,7 @@
 path: "/use-effect"
 title: "useEffect"
 order: "3C"
-section: "Typing with Hooks and State Management"
+section: "Interacting with Components"
 description: "Catching omissions with the useEffect hook using TypeScript."
 ---
 

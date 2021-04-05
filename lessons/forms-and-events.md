@@ -2,7 +2,7 @@
 path: "/forms-and-events"
 title: "Forms and Events"
 order: "3D"
-section: "Typing with Hooks and State Management"
+section: "Interacting with Components"
 description: "Adding type safety to forms and events."
 ---
 

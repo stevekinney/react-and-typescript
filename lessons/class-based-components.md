@@ -2,7 +2,7 @@
 path: "/class-based-components"
 title: "Typing Class-based Components"
 order: "3E"
-section: "Typing with Hooks and State Management"
+section: "Interacting with Components"
 description: "A brief look at how we can add type safety to class-based React cmponents."
 ---
 

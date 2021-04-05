@@ -2,7 +2,7 @@
 path: "/typing-children-solution"
 title: "Typing Children (Solution)"
 order: "2E"
-section: "TypeScript and React Fundamentals"
+section: "The Fundamentals"
 description: "In which we determine what type to use for child components in React."
 ---
 

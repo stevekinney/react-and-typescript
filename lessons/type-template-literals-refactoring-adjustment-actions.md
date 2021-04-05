@@ -2,7 +2,7 @@
 path: "/type-template-literals-refactoring-adjustment-actions"
 title: "Type Template Literals: Refactoring Our Color Adjustment Actions"
 order: "6G"
-section: "Helpful TypeScript Concepts"
+section: "Just Enough TypeScript"
 description: "Using type template literals to dynamically create types."
 ---
 

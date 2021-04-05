@@ -2,7 +2,7 @@
 path: "/typing-styling"
 title: "Typing Styling"
 order: "2F"
-section: "TypeScript and React Fundamentals"
+section: "The Fundamentals"
 description: "A quick look at how to type inline CSS styling with TypeScript"
 ---
 

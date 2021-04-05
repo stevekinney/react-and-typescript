@@ -2,7 +2,7 @@
 path: "/utility-types-character-cards"
 title: "Refactoring the Character Cards with Utility Types"
 order: "6C"
-section: "Helpful TypeScript Concepts"
+section: "Just Enough TypeScript"
 description: "A quick rundown of some of the built-in type helpers and whatnot."
 ---
 

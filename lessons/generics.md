@@ -2,7 +2,7 @@
 path: "/generics"
 title: "Working with Generics"
 order: "6A"
-section: "Helpful TypeScript Concepts"
+section: "Just Enough TypeScript"
 description: "A gentle tour of what generics are in TypeScript and how they work."
 ---
 

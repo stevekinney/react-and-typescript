@@ -2,7 +2,7 @@
 path: "/use-state"
 title: "useState Hook"
 order: "3A"
-section: "Typing with Hooks and State Management"
+section: "Interacting with Components"
 description: "An introduction to typing useState in React."
 ---
 

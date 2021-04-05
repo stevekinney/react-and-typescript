@@ -2,7 +2,7 @@
 path: "/context-api"
 title: "The Context API"
 order: "5B"
-section: "A Color Swatch and the Context API"
+section: "Color and Context"
 description: "Get your hands dirty with the Context API and TypeScript."
 ---
 

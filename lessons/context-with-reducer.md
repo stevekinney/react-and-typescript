@@ -2,7 +2,7 @@
 path: "/context-with-reducer"
 title: "The Context API with State Management"
 order: "5C"
-section: "A Color Swatch and the Context API"
+section: "Color and Context"
 description: "Hooking up our Context API with our reducer."
 ---
 

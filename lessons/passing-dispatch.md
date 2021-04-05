@@ -2,7 +2,7 @@
 path: "/passing-dipatch"
 title: "Prologue: Passing Dispatch as a Props"
 order: "5A"
-section: "A Color Swatch and the Context API"
+section: "Color and Context"
 description: "Getting started with a simple color swatch application."
 ---
 

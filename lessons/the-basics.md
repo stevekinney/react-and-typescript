@@ -2,7 +2,7 @@
 path: "/the-most-basic-example"
 title: "The Very Basics"
 order: "2A"
-section: "TypeScript and React Fundamentals"
+section: "The Fundamentals"
 description: "Let’s look at a very simple component and see what TypeScript gives us out of the box."
 ---
 

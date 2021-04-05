@@ -2,7 +2,7 @@
 path: "/refactoring-color-inputs"
 title: "Refactoring the Color Inputs"
 order: "5D"
-section: "A Color Swatch and the Context API"
+section: "Color and Context"
 description: "Let's DRY out our inputs?"
 ---
 
