@@ -10,7 +10,13 @@ description: "Getting started and an introduction to TypeScript && React Worksho
 
 This workshop is for anyone who is interested in learning how to use TypeScript with React. While there is no expectation that you're familiar with TypeScript, we're not going to be covering the basics of TypeScript directly. Instead, we'll be learning it within the context of building simple components in React. If you're familiar with building React applications using TypeScript already, some of the content that we're going to cover is going to be things you already know. That said, I have a suspicion that you'll pick up a few tips and tricks along the way. I also hope that it will reinforce the fundamentals for you.
 
-## Set Up
+## Code Examples and Project Starters
+
+Clone [this repository][projects] and run `npx npm-recursive-install` to install all of the dependencies.
+
+[projects]: https://github.com/stevekinney/react-and-typescript-projects
+
+## Your Set Up
 
 You don't need a lot to get rocking and/or rolling with this course. In fact, most of the examples and exercises have versions that are hosted on [CodeSandbox][]. So, you probably only need a browsers and if you're reading this, you likely already have one of those.
 
@@ -20,6 +26,8 @@ But, let's assume that you also want to work on some of this stuff locally as we
 
 - [NodeJS][]. This course was tested using the latest LTS release of Node at the time (e.g. 14), but it honestly shouldn't matter much. I recommend using [nvm][] to manage which version of Node you're using.
 - You're going to need an editor of some kind. I recommend using [Visual Studio Code][vscode]. But, you likely already have opinions on this topic.
+
+## My Set Up
 
 In case you're morbidly curious about what I'm using as we spend the next several hours together, here is a quick rundown of my setup.
 
