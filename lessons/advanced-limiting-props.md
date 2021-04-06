@@ -60,3 +60,7 @@ type DestructiveButtonProps = {
   destructive: boolean;
 };
 ```
+
+You can find a completed version [here][complete].
+
+[complete]: https://codesandbox.io/s/buttons-complete-732fx

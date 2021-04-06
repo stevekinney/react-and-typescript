@@ -1,7 +1,7 @@
 ---
 path: "/class-based-components"
 title: "Typing Class-based Components"
-order: "3E"
+order: "3D"
 section: "Interacting with Components"
 description: "A brief look at how we can add type safety to class-based React cmponents."
 ---
@@ -44,3 +44,7 @@ class Counter extends Component<CounterProps, CounterState> {
 ```
 
 One thing that you'll notice is that we called out `CounterState` twice. Once in the type parameter and again in the instance property. Why did we do this?
+
+You can view the completed version [here][complete].
+
+[complete]: https://codesandbox.io/s/incident-counter-class-based-completed-p1fio
