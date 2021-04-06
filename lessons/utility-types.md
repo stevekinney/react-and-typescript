@@ -14,8 +14,8 @@ type ObjectLiteralType = {
   second: 2;
 };
 
-// %inferred-type: "first" | "second"
-type Result = keyof ObjectLiteralType; // (A)
+// Inferred Type: "first" | "second"
+type Result = keyof ObjectLiteralType;
 ```
 
 ## Getting The Type Of A Single Key In An Object
@@ -30,13 +30,13 @@ type Obj = {
   prop1: "d";
 };
 
-// %inferred-type: "c"
+// Inferred Type: "c"
 type Result0 = Obj["prop0"];
 
-// %inferred-type: "a" | "b"
+// Inferred Type: "a" | "b"
 type Result1 = Obj[0 | 1];
 
-// %inferred-type: "c" | "d"
+// Inferred Type: "c" | "d"
 type Result2 = Obj["prop0" | "prop1"];
 ```
 
@@ -51,7 +51,7 @@ type Obj = {
   c: number;
 };
 
-// %inferred-type: number | "A" | "B"
+// Inferred Type: number | "A" | "B"
 type Values = Obj[keyof Obj];
 ```
 
@@ -61,7 +61,7 @@ type Values = Obj[keyof Obj];
 type A = "a" | "b" | "c";
 type B = "b" | "c" | "d";
 
-// %inferred-type: "a" | "b" | "c" | "d"
+// Inferred Type: "a" | "b" | "c" | "d"
 type Union = A | B;
 ```
 
@@ -69,12 +69,12 @@ type Union = A | B;
 
 ```ts
 type ObjectTypeA = {
-  propA: bigint;
+  firstProp: number;
   sharedProp: string;
 };
 
 type ObjectTypeB = {
-  propB: boolean;
+  secondProp: boolean;
   sharedProp: string;
 };
 
@@ -91,7 +91,7 @@ This is useful when trying to combine the props that you're going to use for a R
 type A = "a" | "b" | "c";
 type B = "b" | "c" | "d";
 
-// %inferred-type: "b" | "c"
+// Inferred Type: "b" | "c"
 type Intersection = A & B;
 ```
 
@@ -111,11 +111,11 @@ There isn't much of a good reason for this one to exist, but it helps explain th
 type IsAssignableTo<A, B> = A extends B ? true : false;
 
 // Type `123` is assignable to type `number`
-// %inferred-type: true
+// Inferred Type: true
 type Result1 = IsAssignableTo<123, number>;
 
 // Type `number` is not assignable to type `123`
-// %inferred-type: false
+// Inferred Type: false
 type Result2 = IsAssignableTo<number, 123>;
 ```
 
@@ -126,13 +126,13 @@ Takes stuff out of a union. It's built into TypeScript, but here is also what it
 ```ts
 type Exclude<T, U> = T extends U ? never : T;
 
-// %inferred-type: 1 | 3
+// Inferred Type: 1 | 3
 type Result0 = Exclude<1 | 2 | 3, 2>;
 
-// %inferred-type: "a" | "b"
+// Inferred Type: "a" | "b"
 type Result1 = Exclude<1 | "a" | 2 | "b", number>;
 
-// %inferred-type: "a" | 2
+// Inferred Type: "a" | 2
 type Result2 = Exclude<1 | "a" | 2 | "b", 1 | "b" | "c">;
 ```
 
@@ -143,10 +143,10 @@ The opposite of `Exclude`.
 ```ts
 type Extract<T, U> = T extends U ? T : never;
 
-// %inferred-type: 1 | 2
+// Inferred Type: 1 | 2
 type Result1 = Extract<1 | "a" | 2 | "b", number>;
 
-// %inferred-type: 1 | "b"
+// Inferred Type: 1 | "b"
 type Result2 = Extract<1 | "a" | 2 | "b", 1 | "b" | "c">;
 ```
 
@@ -165,13 +165,29 @@ type ObjectWithStringKeys = { [key: string]: number };
 You can iterate over a union if you want.
 
 ```ts
-// %inferred-type: { a: number; b: number; c: number; }
+// Inferred Type: { a: number; b: number; c: number; }
 type Result = {
   [K in "a" | "b" | "c"]: number;
+};
+
+type Mask = {
+  [K in keyof ObjectLiteralType]: boolean;
 };
 ```
 
 ## `Pick`
+
+```ts
+type ObjectLiteralType = {
+  john: 1;
+  paul: 2;
+  george: 3;
+  ringo: 4;
+};
+
+// Inferred Type: { george: 2; ringo: 4; }
+type Result = Omit<ObjectLiteralType, "george" | "ringo">;
+```
 
 ## `Omit`
 
@@ -179,14 +195,14 @@ Literally the opposite of `Pick`
 
 ```ts
 type ObjectLiteralType = {
-  eeny: 1;
-  meeny: 2;
-  miny: 3;
-  moe: 4;
+  john: 1;
+  paul: 2;
+  george: 3;
+  ringo: 4;
 };
 
-// %inferred-type: { meeny: 2; moe: 4; }
-type Result = Omit<ObjectLiteralType, "eeny" | "miny">;
+// Inferred Type: { john: 1; paul: 2; }
+type Result = Omit<ObjectLiteralType, "george" | "ringo">;
 ```
 
 ### String Manipulation Utilities
@@ -200,10 +216,12 @@ type UncapitalizeWes = Uncapitalize<"Wes">;
 
 ### `React.HTMLProps<HTMLXXXElement>`
 
-Type representing Props of specified HTML Element - for extending HTML Elements
+A type representing Props of specified HTML element. Useful for extending HTML Elements.
 
 ```ts
-const Input: React.FC<Props & React.HTMLProps<HTMLInputElement>> = props => { ... }
+const Input = (props: <Props & React.HTMLProps<HTMLInputElement>) => {
+  // …
+}
 
 <Input about={...} accept={...} alt={...} ... />
 ```
