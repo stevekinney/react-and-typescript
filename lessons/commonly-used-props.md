@@ -114,6 +114,18 @@ type ContrivedExampleProps = {
 };
 ```
 
+A standalone function that you type as your declare it, is a little bit different.
+
+```ts
+const add = (a: number, b: number): number => {
+  return a + b;
+};
+
+function subtract(a: number, b: number): number {
+  return a - b;
+}
+```
+
 Finally, we should consider the fact that not every prop is required.
 
 ```ts
