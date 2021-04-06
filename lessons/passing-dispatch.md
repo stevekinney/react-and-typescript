@@ -183,6 +183,6 @@ In the next few sections, we're going to:
 - Fix a bug that hasn't appeared yet with our sliders.
 - Fix that annoying issue where we find outselves reimplementing the type properties of an input field.
 
-[This] is where we are at the end of this section.
+[This][complete] is where we are at the end of this section.
 
 [completed]: https://codesandbox.io/s/red-green-blue-with-dispatch-8ketd?file=/src/ColorSlider.tsx:38-524
