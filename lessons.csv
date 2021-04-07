@@ -39,3 +39,4 @@ path,title,order,section,description
 "/create-context","Solving for Context API Edge Cases","9G","Advanced Component Patterns","We can make an abstraction that solves for what to do if a context isn't set."
 "/migration","Migrating From JavaScript","10A","Appendix","A collection of high-level tips about how to migrate your application from JavaScript to TypeScript."
 "/types-versus-interfaces","Types Versus Interfaces","10B","Appendix","What are some of the differences between types and interfaces?"
+"/sandboxes","Code Sandboxes","10C","Appendix","All Code Sandboxes"
