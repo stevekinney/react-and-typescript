@@ -36,5 +36,6 @@ order,title,link0,link1,link2,link3,link4,link5,link6,link7,link8,link9,link10,l
 9D,Polymorphic Components (Solution),https://codesandbox.io/s/as-prop-complete-x4ifs?file=/src/Application.tsx,,,,,,,,,,,,,,,,,
 9E,Function Overloads,https://www.typescriptlang.org/play?ssl=12&ssc=7&pln=12&pc=10#code/GYVwdgxgLglg9mABAQwCaoBTBgJwM5QBciYIAtgEYCmOAlMRnlRAqsaZTbYgLwB8JctRwBuALAAoUJFgIU6LLgLshNADSImLMG0Gc6K-eKnho8JGkyTEibPiJ7ha65uasA-IeGT6jmogAfRAxGNx0vLl4BDmFuAG8XGGBgrVZeHh5EcFQqbDAqVG4cKigQHCRQ7V0YyP55TDsCDVSdWmMbYtLy2yUoRABqVyrjAF9JSW0CeoAVAHc4XnqMACY2iYQpvBgADwicRcs5uAwAFjWJSb6qGABzAAs+zMtTjTORIA,,,,,,,,,,,,,,,,,
 9F,Demanding Props Based on Other Props,https://codesandbox.io/s/truncated-text-incomplete-hrbi5,https://codesandbox.io/s/truncated-text-complete-kbl59,,,,,,,,,,,,,,,,
+9G,Solving for Context API Edge Cases,,,,,,,,,,,,,,,,,,
 10A,Migrating From JavaScript,https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html,https://github.com/Microsoft/TypeScript-React-Conversion-Guide#typescript-react-conversion-guide,,,,,,,,,,,,,,,,
 10B,Types Versus Interfaces,https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces,https://twitter.com/karoljmajewski/status/1082413696075382785,https://pbs.twimg.com/media/DwV-oOsXcAIct2q?format=jpg&name=medium,,,,,,,,,,,,,,,

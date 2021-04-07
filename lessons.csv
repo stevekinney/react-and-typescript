@@ -36,5 +36,6 @@ path,title,order,section,description
 "/polymorphic-components-solution","Polymorphic Components (Solution)","9D","Advanced Component Patterns","Typing Polymorphic components with TypeScript."
 "/overloads","Function Overloads","9E","Advanced Component Patterns","A brief look at function overloads in TypeScript."
 "/dependent-props","Demanding Props Based on Other Props","9F","Advanced Component Patterns","A look at how to implement props that rely on other props being set."
+"/create-context","Solving for Context API Edge Cases","9G","Advanced Component Patterns","We can make an abstraction that solves for what to do if a context isn't set."
 "/migration","Migrating From JavaScript","10A","Appendix","A collection of high-level tips about how to migrate your application from JavaScript to TypeScript."
 "/types-versus-interfaces","Types Versus Interfaces","10B","Appendix","What are some of the differences between types and interfaces?"
