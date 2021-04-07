@@ -12,7 +12,7 @@ This workshop is for anyone who is interested in learning how to use TypeScript 
 
 ## Code Examples and Project Starters
 
-Clone [this repository][projects] and run `npx npm-recursive-install` to install all of the dependencies.
+Clone [this repository][projects] and run `npx recursive-install` to install all of the dependencies.
 
 [projects]: https://github.com/stevekinney/react-and-typescript-projects
 
