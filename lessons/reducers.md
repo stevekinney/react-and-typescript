@@ -30,7 +30,7 @@ const reducer = (state: PizzaState, action: any) => {
 };
 ```
 
-(If you remember, try to fat-finger it to use `PizzaData` first.)
+<!-- (If you remember, try to fat-finger it to use `PizzaData` first.) -->
 
 We do need to figure out what we're going to do with the actions though, right? Luckily, they mostly conform to the same shape.
 
@@ -86,22 +86,7 @@ dispatch({
 
 This will mostly get everything working.
 
-## Actions
-
-With this awesome library called "type-safe" actions, we can do the following:
-
-```ts
-export const updateNumberOfPeople = (value: number): PizzaAction =>
-  action("UPDATE_NUMBER_OF_PEOPLE", value);
-
-export const updateSlicesPerPerson = (value: number): PizzaAction =>
-  action("UPDATE_SLICES_PER_PERSON", value);
-
-export const updateSlicesPerPie = (value: number): PizzaAction =>
-  action("UPDATE_SLICES_PER_PIE", value);
-```
-
-It's just a helper, but it gets a bit cooler than this.
+## Reducer
 
 Let's say that this is our reducer.
 
@@ -131,37 +116,14 @@ export const reducer = (state: PizzaState, action: PizzaAction): PizzaState => {
 };
 ```
 
-Those strings worry me.
+Those strings worry me. But, is that worry misguided?
 
 We _could_ use constants. That's a common pattern in JavaScript.
 
-Last time around, we used conditionals, which helped. But TypeSafe actions gives us another option.
+Those `action.type` strings are being verified by TypeScript. If we mess one up, we're okay.
 
-I'd rather see us do something like this:
+## Where Are We Now?
 
-```ts
-export const reducer = (state: PizzaState, action: PizzaAction): PizzaState => {
-  if (action.type === "UPDATE_NUMBER_OF_PEOPLE") {
-    return addPizzasNeededToPizzaData({
-      ...state,
-      numberOfPeople: action.payload,
-    });
-  }
-
-  if (action.type === "UPDATE_SLICES_PER_PERSON") {
-    return addPizzasNeededToPizzaData({
-      ...state,
-      slicesPerPerson: action.payload,
-    });
-  }
-
-  if (action.type === "UPDATE_SLICES_PER_PIE") {
-    return addPizzasNeededToPizzaData({
-      ...state,
-      slicesPerPie: action.payload,
-    });
-  }
-
-  return state;
-};
-```
+- `exercises/19-pizza-calculator-complete`
+- `projects/pizza-calculator` on the `pizza-calculator-complete` branch
+- [CodeSandbox](https://codesandbox.io/s/pizza-calculator-reducer-complete-y6vjc?file=/src/Application.tsx)

@@ -1,12 +1,22 @@
 ---
 path: "/dog-facts"
 title: "Exercise: Dog Facts"
-order: "3E"
+order: "3F"
 section: "Interacting with Components"
 description: "Adding type safety to forms and events."
 ---
 
-We'll start with [this sandbox][base].
+Let's pull everything together. We're going to wire up forms and events with some "asynchronous" data.
+
+We'll start with [this sandbox][base]. Alternatively, you can use `projects/dog-facts` in the project repository.
+
+## Your Mission
+
+When the user hits submit on the form, we want to fetch however many facts about dogs as they requested.
+
+## Solution
+
+**Warning**: Spoilers below. Proceed at your own risk.
 
 ```tsx
 import * as React from "react";
@@ -216,9 +226,13 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 };
 ```
 
-### Completed Version
+### Where Are We Now?
 
-A completed version can be found [here][complete].
+A completed version can be found in:
+
+- `projects/dog-facts` on the `dog-facts/complete` branch
+- `examples17-dog-facts-complete`
+- [CodeSandbox][complete]
 
 [base]: https://codesandbox.io/s/dog-facts-24bqt?file=/src/Application.tsx
 [complete]: https://codesandbox.io/s/dog-facts-complete-80d61

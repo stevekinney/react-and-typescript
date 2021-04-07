@@ -6,7 +6,7 @@ section: "Advanced Component Patterns"
 description: "Typing Polymorphic components with TypeScript."
 ---
 
-So, let's start with [a simplifed version of what we had before][base].
+So, let's start with [a simplifed version of what we had before][base]. If you're playing along locally, you can use `projects/as-props` from the project repository.
 
 <iframe src="https://codesandbox.io/embed/as-prop-base-qmqnc?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApplication.tsx&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"

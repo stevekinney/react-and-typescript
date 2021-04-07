@@ -62,8 +62,35 @@ const name: string;
 const setName: React.Dispatch<React.SetStateAction<string>>;
 ```
 
+We need to do a little more work to make this application worth using.
+
+```tsx
+const Question = ({ question, answer }: QuestionProps) => {
+  const [hidden, toggleHidden] = useState(true);
+
+  return (
+    <article className="question">
+      <header>{question}</header>
+      <p className="answer">
+        <span className="blurred">{answer}</span> /* ✅ */
+        <span className={`${hidden ? "blurred" : "visible"}`}>{answer}</span>
+      </p>
+      <footer>
+        <button>Toggle Answer</button>
+        <button onClick={() => toggleHidden(!hidden) /* ✅ */}>
+          Toggle Answer
+        </button>
+      </footer>
+    </article>
+  );
+};
+```
+
+## Where Are We Now?
+
 [This sandbox][complete] represents where we are at the end of this section.
 
 [complete]: https://codesandbox.io/s/avengers-quiz-use-state-z68vj?file=/src/Application.tsx
 
-**Nota bene**: You might be wondering what this looks like when we change the state. We'll come back to that shortly, I promise.
+- `examples/07-avengers-quiz-with-use-state`
+- `projects/avengers-quiz` on the `avengers-quiz-with-use-state` branch

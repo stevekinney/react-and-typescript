@@ -205,3 +205,9 @@ export default Application;
 
 [base]: https://codesandbox.io/s/truncated-text-incomplete-hrbi5
 [complete]: https://codesandbox.io/s/truncated-text-complete-kbl59
+
+## Where Are We Now?
+
+- `projects/truncated-text` on the `truncated-text-complete` branch
+- `examples/41-truncated-text-complete`
+- [CodeSandbox][complete]

@@ -19,7 +19,9 @@ Above, we can see a fairly simple `NameTag` component. As it stands right now, i
 
 Is this JavaScript or TypeScript? The answer is "yes." Out of the box, TypeScript is going to try to do everything in its power to infer all of the types for you.
 
-TypeScript has figured out that `NameTag`, in this case, is a function that takes no arguments and returns a `JSX.Element` , which is a type it knows about from React.
+This is a simple, but core concept that we're going to playing with during our time together. TypeScript is trying its hardest to stay out of your way. Occasionally, we need to step in a give it some hints about what we're intending to do. If you find yourself fighting with TypeScript—then it's worth taking a step back and considering your approach.
+
+Looking at the component in this example. TypeScript has figured out that `NameTag`, in this case, is a function that takes no arguments and returns a `JSX.Element` , which is a type it knows about from React.
 
 ```tsx
 const NameTag: () => JSX.Element;

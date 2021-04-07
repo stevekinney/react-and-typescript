@@ -55,3 +55,9 @@ Here is [sandbox with the completed version of what we've done so far][complete]
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
+
+## Where Are We Now?
+
+- `examples/05-typing-children-with-styling`
+- `projects/typing-children` on the `typing-children-with-styling` branch
+- [CodeSandbox](https://codesandbox.io/s/typescript-children-completed-with-css-6bx23)

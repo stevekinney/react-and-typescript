@@ -13,6 +13,8 @@ description: "An investigation into how we can limit which combinations of prope
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
+If you want to play along locally, you can use `projects/buttons-base` in the project repository.
+
 Let's say we have some buttons and we want to give them an API that looks like the following:
 
 ```tsx
@@ -64,3 +66,9 @@ type DestructiveButtonProps = {
 You can find a completed version [here][complete].
 
 [complete]: https://codesandbox.io/s/buttons-complete-732fx
+
+## Where Are We Now?
+
+- `examples/36-buttons-with-limited-props`
+- `projects/buttons-base` on the `buttons-with-limited-props` branch
+- [CodeSandbox][complete]

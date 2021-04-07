@@ -47,3 +47,11 @@ We can create a type for props out of the prop type of another component—even 
 ```tsx
 React.ComponentProps<typeof CurrentUser>
 ```
+
+[completed]: https://codesandbox.io/s/fun-with-utility-types-solution-x0i28?file=/src/Application.tsx
+
+## Where Are We Now?
+
+- `examples/30-utility-types-solution`
+- `projects/utility-types-exercise` on the `utility-types-solution` branch
+- [CodeSandbox][completed]

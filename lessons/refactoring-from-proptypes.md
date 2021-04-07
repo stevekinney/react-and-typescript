@@ -6,7 +6,7 @@ section: "The Fundamentals"
 description: "With TypeScript, we no longer need PropTypes to provide safety in our application."
 ---
 
-In JavaScript, we've traditionally used `React.PropTypes` in order to make sure that we were passing the correct types to our React components. `React.PropTypes` would only run at run-time and in development and would spit out console warnings in the event that the component recieved the wrong types. This was good, but we can do better with TypeScript (namely, we can do this statically and at compile time).
+In JavaScript, we've traditionally used `React.PropTypes` in order to make sure that we were passing the correct types to our React components. `React.PropTypes` would only run at run-time and in development and would spit out console warnings in the event that the component recieved the wrong types. This was good, but we can do better with TypeScript—specifically, we can do this statically and at compile time.
 
 Let's take a look at how this might look in JavaScript.
 
@@ -42,11 +42,25 @@ const Greeting: ({ name }: GreetingProps) => JSX.Element;
 const Greeting = ({ name }: { name: string }) => <h1>Hello {name}!</h1>;
 ```
 
-This is fine for one prop, but it doesn't scale particularly well.
+This is fine for one prop, but it doesn't scale particularly well. If the number of curly braces is intimidating to you, let's think about what this looks like without all of the destructuring in place.
+
+```tsx
+type GreetingProps = { name: string };
+
+const Greeting = (props: GreetingProps) => <h1>Hello {props.name}!</h1>;
+```
+
+This is not dissimiliar from if we did something simple, like this:
+
+```tsx
+const addTwo = (n: number) => n + 2;
+```
+
+We're just annotating our functions with some extra information to tell TypeScript what we're intending.
 
 ## Together
 
-Let's update our [simple nametag component][base] and add a name property just like we saw above.
+Let's update our [simple `NameTag` component][base] and add a name property just like we saw above.
 
 It might look something like this:
 
@@ -75,4 +89,13 @@ const Application = () => <NameTag name="Steve" />;
 export default Application;
 ```
 
+## Where Are We Now?
+
+The current state of our code can be found in:
+
+- `examples/02-nametag-with-props`
+- `projects/nametag` on the `nametag-with-props` branch.
+- [CodeSandbox][complete]
+
 [base]: https://codesandbox.io/s/name-tag-bts5l?file=/src/Application.tsx
+[complete]: https://codesandbox.io/s/name-tag-solution-slwmk?file=/src/Application.tsx

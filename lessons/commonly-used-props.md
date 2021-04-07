@@ -137,11 +137,9 @@ type ContrivedProps = {
 
 ## Your Turn
 
-<!-- TODO: Consider making an intermediate sandbox between the very beginning that you did and where they should start. -->
-
 Start [here][base].
 
-[base]: https://codesandbox.io/s/name-tag-bts5l?file=/src/Application.tsx
+[base]: https://codesandbox.io/s/name-tag-solution-slwmk?file=/src/Application.tsx
 
 Okay, just to get the blood flowing and build up some muscle memory. Why don't you add a second _optional_ prop: the ability to replace "Hello" with the greeting of your choosing.
 
@@ -154,3 +152,11 @@ Let's experiment a bit.
 - What happens if we omit the property all together?
 - What happens if we try to call a method on the string?
 - What happens if we try to set a default value?
+
+## Where Are We Now?
+
+The current state of the code can be found in:
+
+- `examples/03-nametag-with-optional props`
+- `projects/nametag` on the `nametag-with-optional-props` branch
+- [CodeSandbox](https://codesandbox.io/s/name-tag-solution-slwmk?file=/src/Application.tsx)

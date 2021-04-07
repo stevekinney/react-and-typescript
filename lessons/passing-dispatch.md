@@ -138,8 +138,6 @@ We'd ideally like to pass these in as `onChange` props. They've got everything t
 
 But despite the fact that these `ColorSlider` props are basically some ceremony around an input field, it's a little ridiculous that we need to add props for everything that the underlying component supports.
 
-**Take a mental note of how annoying this is.** (I don't want to spoil anything, but just take a mental note, okay?)
-
 Fine. We'll go ahead and define a prop for this I guess.
 
 In `ColorSlider.tsx`:
@@ -183,6 +181,12 @@ In the next few sections, we're going to:
 - Fix a bug that hasn't appeared yet with our sliders.
 - Fix that annoying issue where we find outselves reimplementing the type properties of an input field.
 
-[This][complete] is where we are at the end of this section.
+[This][completed] is where we are at the end of this section.
 
-[completed]: https://codesandbox.io/s/red-green-blue-with-dispatch-8ketd?file=/src/ColorSlider.tsx:38-524
+## Where Are We Now?
+
+- `examples/23-color-swatch-passing-dispatch`
+- `projects/color-swatch-base` on the `color-swatch-passing-dispatch` branch.
+- [CodeSandbox][completed]
+
+[completed]: https://codesandbox.io/s/red-green-blue-with-dispatch-8ketd?file=/src/ColorSlider.tsx

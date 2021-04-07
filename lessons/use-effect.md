@@ -41,3 +41,10 @@ export default Counter;
 ```
 
 (Yea, it's just curly braces.)
+
+## Where Are We Now?
+
+You can see the current state of the code in:
+
+- `examples/11-fixed-counter`
+- [CodeSandbox](https://codesandbox.io/s/fixed-counter-tct1f?file=/src/Application.tsx)

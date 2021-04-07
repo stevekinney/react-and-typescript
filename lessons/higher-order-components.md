@@ -185,3 +185,9 @@ export default Application;
 ```
 
 [complete]: https://codesandbox.io/s/character-sheet-utility-with-hoc-3opyk?file=/src/Application.tsx:740-746
+
+## Where Are We Now?
+
+- `projects/character-card` on the `character-card-with-hoc` branch
+- `examples/32-character-card-with-hoc`
+- [CodeSandbox][complete]

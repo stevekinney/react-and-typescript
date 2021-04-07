@@ -66,4 +66,12 @@ export const reducer = (
 };
 ```
 
-You can find the result [here](https://codesandbox.io/s/red-green-blue-with-template-literals-4yf86?file=/src/reducer.ts).
+You can find the result [here][completed].
+
+## Where Are We Now?
+
+- `projects/color-swatch-base` on the `color-swatch-with-template-literals` branch
+- `examples/31-color-swatch-with-template-literals`
+- [CodeSandbox][completed]
+
+[completed]: https://codesandbox.io/s/red-green-blue-with-template-literals-4yf86?file=/src/reducer.ts

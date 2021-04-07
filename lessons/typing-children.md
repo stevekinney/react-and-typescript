@@ -37,7 +37,7 @@ Off the top of my head, here are some things that you could try.
 - `React.ReactChildren`
 - `React.ReactChild[]`
 
-Why don't you take it for a spin and see what works best for you? You can use [this sandbox](https://codesandbox.io/s/typescript-children-3vu37?file=/src/Application.tsx).
+Why don't you take it for a spin and see what works best for you? You can use [this sandbox](https://codesandbox.io/s/typescript-children-3vu37?file=/src/Application.tsx). Alternatively, there is `projects/typing-children` in the project repository.
 
 ```tsx
 import * as React from "react";
@@ -66,3 +66,9 @@ export default function Application() {
   );
 }
 ```
+
+## Where Are We Now?
+
+- `examples/04-typing-children`
+- `projects/typing-children`
+- [CodeSandbox](https://codesandbox.io/s/typescript-children-3vu37?file=/src/Application.tsx)

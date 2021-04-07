@@ -93,5 +93,11 @@ const reducer = (state: CounterState, action: BetterAction) => {
 
 The completed example is [here][completed].
 
+## Where Are We Now?
+
+- `projects/counter-for-hooks` on the `incident-counter-reducer-solution` branch.
+- `examples/21-incident-counter-reducer-solution`
+- [CodeSandbox][completed]
+
 [base]: https://codesandbox.io/s/incident-counter-simple-vjlph?file=/src/Application.tsx
 [completed]: https://codesandbox.io/s/incident-counter-reducer-complete-yryxm?file=/src/application.tsx

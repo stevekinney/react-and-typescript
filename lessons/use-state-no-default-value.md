@@ -6,7 +6,7 @@ section: "Interacting with Components"
 description: "How to handle the case where we don’t have a default value for use with type inference. "
 ---
 
-We'll start from this [base][].
+We'll start from this [base][]. You can also use `projects/character-card` or start with `examples/08-character-card` in the project repository.
 
 The previous example works, but you might not always have a default value for a given piece of state at the time that the component is initiatlized. For example, here is some psuedo-code:
 
@@ -31,8 +31,6 @@ export type CharacterType = {
   total: number;
 };
 ```
-
-(**Nota bene**: I've been intentionally somewhat quiet about the difference between types and interfaces, but we'll dig into this in a bit.)
 
 Let's also imagine for a moment that we have an asynchronous API request called `getCurrentUser`. We'll polyfill it as follows for now.
 
@@ -136,6 +134,14 @@ Another option is to treat them independently.
 ```
 
 You can see the completed example [here][complete].
+
+## Where Are We Now?
+
+You can find the current state of the code in:
+
+- `examples/09-character-card-eventual-state`
+- In `projects/character-card` on the `character-card-eventual-state` branch.
+- [CodeSandbox][complete].
 
 [base]: https://codesandbox.io/s/character-sheet-base-uxlfu?file=/src/Application.tsx
 [complete]: https://codesandbox.io/s/character-sheet-complete-jb8d4?file=/src/Application.tsx:503-620

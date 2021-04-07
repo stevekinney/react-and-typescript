@@ -150,5 +150,11 @@ There is another way to do this, that has some advantages, but we need to learn 
 
 For now, the [final state for this section is here][complete].
 
-[base]: https://codesandbox.io/s/red-green-blue-with-context-hoiiz?file=/src/ColorInput.tsx
-[complete]: https://codesandbox.io/s/red-green-blue-with-context-hoiiz?file=/src/ColorSlider.tsx
+[base]: https://codesandbox.io/s/red-green-blue-with-theme-context-bzykq?file=/src/Application.tsx
+[complete]: https://codesandbox.io/s/red-green-blue-with-context-hoiiz?file=/src/Application.tsx
+
+## Where Are We Now?
+
+- `projects/color-swatch-base` on the `color-swatch-with-state-context` branch
+- `examples/25-color-swatch-with-state-context`
+- [CodeSandbox]

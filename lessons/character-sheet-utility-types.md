@@ -79,3 +79,9 @@ The completed example can be found [here][complete].
 
 [base]: https://codesandbox.io/s/character-sheet-utility-types-base-48cqu
 [complete]: https://codesandbox.io/s/character-sheet-utility-types-complete-jb8d4?file=/src/Table.tsx
+
+## Where Are We Now?
+
+- `projects/character-card` on the `character-card-with-utility-types` branch
+- `examples/28-character-card-with-utility-types`
+- [CodeSandbox][complete]

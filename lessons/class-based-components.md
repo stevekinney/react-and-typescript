@@ -45,6 +45,39 @@ class Counter extends Component<CounterProps, CounterState> {
 
 One thing that you'll notice is that we called out `CounterState` twice. Once in the type parameter and again in the instance property. Why did we do this?
 
+## What About Events?
+
+We can wire up the buttons fairly easily.
+
+```tsx
+increment = () => {
+  this.setState(({ count }) => ({ count: count + 1 }));
+};
+
+decrement = () => {
+  this.setState(({ count }) => ({ count: count - 1 }));
+};
+
+reset = () => {
+  this.setState({ count: 0 });
+};
+```
+
+This get a little tricker with that `form` element.
+
+```tsx
+changeCount = (event: ChangeEvent<HTMLInputElement>) => {
+  this.setState({ count: +event.target.value });
+};
+```
+
+Different elements trigger different events in the browser. Those events have different properties. This means that TypeScript needs some help from us to let it know roughly what kind of event we're expecting so that it can help us avoid any mistakes.
+
 You can view the completed version [here][complete].
 
 [complete]: https://codesandbox.io/s/incident-counter-class-based-completed-p1fio
+
+## Where Are We Now?
+
+- `examples/13-counter-class-based-with-state`
+- [CodeSandbox](https://codesandbox.io/s/incident-counter-class-based-completed-p1fiofile=/src/Application.tsx)

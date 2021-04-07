@@ -85,3 +85,9 @@ const Application = () => {
 
 export default Application;
 ```
+
+## Where are we now?
+
+- `projects/as-props` on the `as-props-solution` branch
+- `examples/39-as-props-solution`
+- [CodeSandbox](https://codesandbox.io/s/as-prop-complete-x4ifs?file=/src/Application.tsx)
