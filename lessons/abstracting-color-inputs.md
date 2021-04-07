@@ -62,3 +62,8 @@ It loads, but `ColorInput` needs a tiny bit of work that we'll handle later.
 You can explore a version of this [here][complete].
 
 [complete]: https://codesandbox.io/s/red-green-blue-with-better-color-adjustment-nppsf?file=/src/ColorInput.tsx
+
+## Where Are We Now?
+
+- `examples/26-color-swatch-refactored`
+- [CodeSandbox](https://codesandbox.io/s/red-green-blue-with-better-color-adjustment-nppsf?file=/src/ColorInput.tsx)

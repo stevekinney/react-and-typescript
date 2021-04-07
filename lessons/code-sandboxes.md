@@ -1,10 +1,10 @@
-# React and TypeScript
-
-Companion site for the React and TypeScript course for [Frontend Masters](https://frontendmasters.com).
-
-You can find the examples and project starters [here](https://github.com/stevekinney/react-and-typescript-projects).
-
-## Code Sandboxes
+---
+path: "/sandboxes"
+title: "Code Sandboxes"
+order: "10C"
+section: "Appendix"
+description: "All Code Sandboxes"
+---
 
 - [01-nametag](https://codesandbox.io/s/name-tag-bts5l?file=/src/Application.tsx)
 - [02-nametag-with-props](https://codesandbox.io/s/name-tag-solution-slwmk?file=/src/Application.tsx)
