@@ -28,7 +28,7 @@ path,title,order,section,description
 "/type-template-literals","Type Template Literals","6F","Just Enough TypeScript","Using type template liberals to dynamically create types."
 "/type-template-literals-refactoring-adjustment-actions","Type Template Literals: Refactoring Our Color Adjustment Actions","6G","Just Enough TypeScript","Using type template literals to dynamically create types."
 "/higher-order-components","Higher Order Components with TypeScript","8A","Higher Order Components","Implementing the higher-order component pattern with TypeScript."
-"/higher-order-components-exercise","Higher Order Components with TypeScript","8B","Higher Order Components","Implementing the higher-order component pattern with TypeScript."
+"/higher-order-components-exercise","Higher Order Components with TypeScript (Exercise)","8B","Higher Order Components","Implementing the higher-order component pattern with TypeScript."
 "/higher-order-components-solution","Higher Order Components (Solution)","8C","Higher Order Components","Implementing the higher-order component pattern with TypeScript."
 "/limiting-props","Limiting Props a Component Can Take Based on Other Props","9A","Advanced Component Patterns","An investigation into how we can limit which combinations of properties can be used with a component."
 "/polymorphic-components","Polymorphic Components with TypeScript","9B","Advanced Component Patterns","Typing Polymorphic components with TypeScript."
