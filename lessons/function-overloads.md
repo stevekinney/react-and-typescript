@@ -22,7 +22,7 @@ function asyncAdd(a: number, b: number, fn?: callback) {
 
 ## Your Mission
 
-We're going to to make an `add` function that works with partial application.
+We're going to to make an `add` function that works with partial application. You can use [this playground](https://www.typescriptlang.org/play?#code/GYVwdgxgLglg9mABAQwCaoBTIFzLATwBpEAjbFAgSkQG8BYAKEURmEQxMQF4fFxUApsBhgBqagCcBUEBKQdyefNS4A+FIgDUpANyNmUmXI3aSehgF8gA).
 
 ```ts
 add(2, 2); // returns 4
