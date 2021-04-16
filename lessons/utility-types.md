@@ -186,7 +186,7 @@ type ObjectLiteralType = {
 };
 
 // Inferred Type: { george: 2; ringo: 4; }
-type Result = Omit<ObjectLiteralType, "george" | "ringo">;
+type Result = Pick<ObjectLiteralType, "george" | "ringo">;
 ```
 
 ## `Omit`
