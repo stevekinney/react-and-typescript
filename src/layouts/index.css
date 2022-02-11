@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
 
 .navbar h1 {
@@ -25,12 +26,48 @@
   font-weight: bold;
 }
 
-.navbar h2 {
+.navbar h2,
+.navbar h3 {
   font-size: 14px;
   margin: inherit;
   padding: inherit;
   color: white;
 }
+
+.button {
+  border-radius: 10px;
+  padding: 0;
+  background: #711d47;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.button .icon {
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.button a {
+  padding: 3px 8px;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 1450px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+.button:hover,
+.button a:hover {
+  background: #ff56ae;
+  color: white;
+}
+
 
 .jumbotron.gradient {
   color: white;

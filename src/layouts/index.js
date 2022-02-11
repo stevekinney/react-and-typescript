@@ -74,6 +74,12 @@ const TemplateWrapper = props => {
               {!frontmatter ? null : (
                 <h2>{`${frontmatter.section} – ${frontmatter.title}`}</h2>
               )}
+              <h3 class="button">
+                <a href="https://frontendmasters.com/courses/react-typescript/">
+                  <span class="mobile-hidden">React and TypeScript</span> Videos
+                  <span class="icon">&nbsp;▶️&nbsp;</span>
+                </a>
+              </h3>
             </div>
             <div className="main">{props.children}</div>
           </div>

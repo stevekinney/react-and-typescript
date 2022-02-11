@@ -12,6 +12,7 @@ module.exports = {
   },
   pathPrefix: "/react-and-typescript", // if you're using GitHub Pages, put the name of the repo here with a leading slash
   plugins: [
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-layout`,
     {
       resolve: `gatsby-source-filesystem`,
